@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a curated collection of free book PDFs and eBooks across diverse genres. Immerse yourself in our expansive digital library featuring classics, contemporary literature, and educational resources.">
+    <meta name="keywords" content="free books, free PDFs, eBooks, download free books, digital library, literature, educational books, best authors, trending books, sci-fi books, philosophical books, classic literature">
+    <meta name="author" content="Free Book Library">
+    <title>Free Book PDFs & eBooks - Your Gateway to Literary Excellence</title>
+
+    <!-- Enhanced Open Graph tags -->
+    <meta property="og:title" content="Free Book PDFs & eBooks - Your Gateway to Literary Excellence">
+    <meta property="og:description" content="Discover a curated collection of free book PDFs and eBooks across diverse genres. Immerse yourself in our expansive digital library.">
+    <meta property="og:image" content="/api/placeholder/1200/630">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Book PDFs & eBooks">
+    <meta name="twitter:description" content="Explore thousands of free book PDFs and eBooks across various genres.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #4f46e5;
+            --accent-color: #c084fc;
+            --background-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3em 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%237c3aed' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 1.5em;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-family: 'Georgia', serif;
+        }
+
+        .container {
+            padding: 4em 2em;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.8em;
+            margin-bottom: 1em;
+            color: var(--primary-color);
+            font-family: 'Georgia', serif;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: var(--text-color);
+            margin-bottom: 1.5em;
+            opacity: 0.9;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1.2em 3em;
+            font-size: 1.2em;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .button:hover::before {
+            opacity: 1;
+        }
+
+        .genre-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            padding-top: 2em;
+        }
+
+        .genre-card {
+            background: var(--card-background);
+            padding: 2.5em;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .genre-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .genre-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .genre-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .genre-card h3 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-bottom: 1em;
+        }
+
+        .genre-card i {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2em;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2em 1em;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .button {
+                padding: 1em 2.5em;
+                font-size: 1.1em;
+            }
+
+            .genre-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading Animation */
+        .loading-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeOut 1s ease-in-out forwards;
+            animation-delay: 2s;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            z-index: 1000;
+            width: 0;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-animation">
+        <img src="/api/placeholder/100/100" alt="Loading..." style="animation: float 1s ease-in-out infinite">
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <header>
+        <img src="image.jpg" alt="Free Book Library Logo">
+        <h1 data-aos="fade-up">Welcome to Our Free Book Library</h1>
+    </header>
+
+    <div class="container" data-aos="fade-up">
+        <h2>Thousands of Free Book PDFs and eBooks</h2>
+        <p>Discover a vast collection of free books covering a wide range of genres and topics. Whether you're into fiction, non-fiction, academic texts, or children's books, we have something for everyone.</p>
+        <p>Our library is constantly updated with new titles, ensuring you always have fresh content to explore. Dive into the world of literature, knowledge, and entertainment with our free book PDFs and eBooks.</p>
+        <a href="https://oceanofpdf.com/" class="button">Go to Find Books</a>
+    </div>
+
+    <section class="trending-section" data-aos="fade-up">
+        <div class="container">
+            <h2>Trending Book Genres</h2>
+            <p>Stay up to date with the most popular and trending books in the world of literature and eBooks. Here are some of the genres and topics that are currently trending:</p>
+
+            <div class="genre-section">
+                <div class="genre-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Science Fiction (Sci-Fi)</h3>
+                    <p>Explore futuristic worlds, space exploration, time travel, and AI with our collection of popular sci-fi books from authors like Isaac Asimov, Arthur C. Clarke, and Philip K. Dick.</p>
+                </div>
+                <div class="genre-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-brain"></i>
+                    <h3>Philosophical Books</h3>
+                    <p>Delve deep into the nature of existence, ethics, and reality with philosophical classics by thinkers like Plato, Aristotle, Friedrich Nietzsche, and Jean-Paul Sartre.</p>
+                </div>
+                <div class="genre-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Self-Help & Personal Development</h3>
+                    <p>Find books that inspire personal growth, success, mental well-being, and self-improvement from authors like Dale Carnegie, Tony Robbins, and Brene Brown.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" data-aos="fade-up">
+        <h2>Famous Authors You Should Know</h2>
+        <p>Get to know some of the greatest authors in literature who have shaped the literary world. Their works are timeless and continue to influence generations of readers:</p>
+
+        <div class="genre-section">
+            <div class="genre-card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-feather-alt"></i>
+                <h3>William Shakespeare</h3>
+                <p>The playwright and poet whose works like *Romeo and Juliet*, *Hamlet*, and *Macbeth* are considered classics of English literature.</p>
+            </div>
+            <div class="genre-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Jane Austen</h3>
+                <p>Author of iconic works such as *Pride and Prejudice* and *Sense and Sensibility*, Austen's novels explore themes of love, marriage, and social status.</p>
+            </div>
+            <div class="genre-card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-book-reader"></i>
+                <h3>George Orwell</h3>
+                <p>Best known for *1984* and *Animal Farm*, Orwell's works focus on social justice, totalitarianism, and the effects of political power.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Free Book Library. All Rights Reserved.</p>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.pageYOffset / totalHeight) * 100;
+            document.querySelector('.progress-bar').style.width = progress + '%';
+        });
+
+        // Remove loading animation after page load
+        window.addEventListener('load', () => {
+            document.querySelector('.loading-animation').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
