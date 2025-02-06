@@ -292,7 +292,111 @@
 
     <div class="container" data-aos="fade-up">
         <h2>Thousands of Free Book PDFs and eBooks</h2>
-        <p>Discover a vast collection of free books covering a wide range of genres and topics. Whether you're into fiction, non-fiction, academic texts, or children's books, we have something for everyone.</p>
+        <p>#include <stdio.h>
+#include <ctype.h>
+
+#define SIZE 26  // There are 26 letters in the English alphabet
+
+int main(int argc, char *argv[]) {
+    if (argc < 2) {  // Check if the user has entered text
+        printf("Usage: %s <text>\n", argv[0]);
+        return 1;
+    }
+
+    int freq[SIZE] = {0};  // Array to store letter frequencies, initialized to 0
+
+    // Process each command-line argument
+    for (int i = 1; i < argc; i++) {
+        for (int j = 0; argv[i][j] != '\0'; j++) {
+            char ch = tolower(argv[i][j]);  // Convert character to lowercase
+            if (ch >= 'a' && ch <= 'z') {   // Check if it is an alphabet
+                freq[ch - 'a']++;  // Increase the count for that letter
+            }
+        }
+    }
+
+    // Print the frequency table
+    printf("Alphabet Frequency Table:\n");
+    for (int i = 0; i < SIZE; i++) {
+        if (freq[i] > 0) {
+            printf("%c : %d\n", i + 'a', freq[i]);  // Print letter and its count
+        }
+    }
+
+    return 0;
+}
+Here is the C program to copy the contents of one text file to another file after removing all whitespaces, with all comments removed:
+
+#include <stdio.h>
+#include <ctype.h>
+
+void copyFileWithoutWhitespace(const char *sourceFile, const char *destinationFile) {
+    FILE *src = fopen(sourceFile, "r");
+    FILE *dest = fopen(destinationFile, "w");
+
+    if (src == NULL || dest == NULL) {
+        printf("Error opening file!\n");
+        return;
+    }
+
+    char ch;
+    while ((ch = fgetc(src)) != EOF) {
+        if (!isspace(ch)) {
+            fputc(ch, dest);
+        }
+    }
+
+    fclose(src);
+    fclose(dest);
+
+    printf("File copied successfully without whitespace!\n");
+}
+
+int main() {
+    char sourceFile[50], destinationFile[50];
+
+    printf("Enter source filename: ");
+    scanf("%s", sourceFile);
+    printf("Enter destination filename: ");
+    scanf("%s", destinationFile);
+
+    copyFileWithoutWhitespace(sourceFile, destinationFile);
+    return 0;
+}
+
+This version of the program does the same task but with all comments removed for cleaner code.
+#include <stdio.h>
+
+void reverseArray(int *arr, int size) {
+    int *end = arr + size - 1;  // Pointer to the last element
+    while (arr < end) {
+        int temp = *arr;
+        *arr = *end;
+        *end = temp;
+        arr++;
+        end--;
+    }
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    reverseArray(arr, n);
+
+    printf("\nReversed array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+Discover a vast collection of free books covering a wide range of genres and topics. Whether you're into fiction, non-fiction, academic texts, or children's books, we have something for everyone.</p>
         <p>Our library is constantly updated with new titles, ensuring you always have fresh content to explore. Dive into the world of literature, knowledge, and entertainment with our free book PDFs and eBooks.</p>
         <a href="https://oceanofpdf.com/" class="button">Go to Find Books</a>
     </div>
